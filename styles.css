@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    height: 100dvh;
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.gridBox{
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    background-color: antiquewhite;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.upperGridBox{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 1em;
+    width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
