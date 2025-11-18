@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  color: white;
   font-family: "Rubik", sans-serif;
 }
 
@@ -37,7 +36,7 @@ main {
   height: 10em;
   border-radius: 1em;
   background-color: hsl(235, 46%, 20%);
-  transition: all 0.4s ease-in-out;
+  transition: filter 0.4s ease-in-out;
 }
 
 .gridBox:hover {
@@ -66,9 +65,12 @@ main {
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 0.05em;
+  color: white;
 }
 
 #upperTopSpan {
+  position: relative;
+  bottom: 0.3em;
   font-size: 0.9em;
   color: hsl(236, 100%, 87%);
 }
@@ -166,6 +168,7 @@ main {
 
 .activityTracker {
   font-weight: 500;
+  color: white;
 }
 
 .currentWeek {
@@ -173,6 +176,10 @@ main {
   font-weight: 200;
   margin-top: 0.2em;
   display: flex;
+}
+
+.pastTracker{
+    color: hsl(236, 100%, 87%);
 }
 
 .currentDay {
@@ -250,6 +257,15 @@ footer {
     padding: 2em;
   }
 
+  .upperTopGridBox img {
+    width: 4.5em;
+    height: 4.5em;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -14%;
+  }
+
   #lowerTopSpan {
     font-size: 2.2em;
   }
@@ -279,6 +295,40 @@ footer {
     height: 15em;
     z-index: 1;
   }
+
+  .currentWeek {
+    font-size: 3.2em;
+    margin-top: .5em;
+    position: relative;
+    top: 8%;
+  }
+
+  .currentDay {
+    font-size: 3.2em;
+    margin-top: .5em;
+    top: 8%;
+  }
+
+  .currentMonth {
+    font-size: 3.2em;
+    margin-top: .5em;
+    top: 8%;
+  }
+
+  .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    top: 20%;
+    height: 80.5%;
+    padding-inline: 1.6em;
+  }
+
+  .pastTracker{
+    font-size: .9em;
+  }
+
 
   #orange {
     background-position-y: -6%;
@@ -327,5 +377,10 @@ footer {
   #yellow:hover {
     filter: drop-shadow(0px 0px 10em hsl(43, 84%, 65%));
     z-index: 0;
+  }
+
+  .dots {
+    top: 18%;
+    left: 80%;
   }
 }
