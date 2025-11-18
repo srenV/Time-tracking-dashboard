@@ -246,7 +246,7 @@ footer {
 
   main {
     margin: 0 auto;
-    max-width: 65%;
+    width: 90em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -298,8 +298,8 @@ footer {
   }
   .gridBox {
     box-sizing: border-box;
-    max-width: 15em;
-    height: 14em;
+    max-width: 20em;
+    height: 20em;
     z-index: 1;
   }
 
