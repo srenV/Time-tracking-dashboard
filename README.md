@@ -4,13 +4,14 @@ This is my solution to the Time tracking dashboard challenge on Frontend Mentor.
 
 ## Overview
 
-First attempt at fetching data from a JSON file. 
+Hardcoded data only; no external JSON fetch is used in this version.
+
 
 ## Built with
 
 - HTML5  
 - CSS3  
-- Flexbox / Grid (depending on what I end up using)
+- Flexbox / Grid
 
 ## Author
 
