@@ -36,7 +36,7 @@ main {
   height: 10em;
   border-radius: 1em;
   background-color: hsl(235, 46%, 20%);
-  transition: filter 0.4s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .gridBox:hover {
@@ -218,10 +218,12 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(236, 100%, 87%);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(235, 45%, 61%);
+  text-decoration: none;
 }
 
 footer {
@@ -282,7 +284,7 @@ footer {
   }
 
   #firstGridBox:hover {
-    filter: drop-shadow(0em 0 10em hsl(246, 80%, 60%));
+    box-shadow: 0em 0 10em hsl(246, 80%, 60%);
     z-index: 0;
   }
 
@@ -355,28 +357,22 @@ footer {
   }
 
   #orange:hover {
-    filter: drop-shadow(0px 0px 10em hsl(15, 100%, 70%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(15, 100%, 70%);
   }
   #cyan:hover {
-    filter: drop-shadow(0px 0px 10em hsl(195, 74%, 62%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(195, 74%, 62%);
   }
   #red:hover {
-    filter: drop-shadow(0px 0px 10em hsl(348, 100%, 68%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(348, 100%, 68%);
   }
   #green:hover {
-    filter: drop-shadow(0px 0px 10em hsl(145, 58%, 55%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(145, 58%, 55%);
   }
   #purple:hover {
-    filter: drop-shadow(0px 0px 10em hsl(264, 64%, 52%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(264, 64%, 52%);
   }
   #yellow:hover {
-    filter: drop-shadow(0px 0px 10em hsl(43, 84%, 65%));
-    z-index: 0;
+    box-shadow: 0px 0px 2em hsl(43, 84%, 65%);
   }
 
   .dots {
