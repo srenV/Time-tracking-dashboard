@@ -246,14 +246,14 @@ footer {
 
   main {
     margin: 0 auto;
-    width: 90em;
+    width: 64em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "main orange cyan red"
       "main green purple yellow"
       "footer footer footer footer";
-    gap: 2em;
+    gap: 1em;
     place-items: center;
   }
 
@@ -298,8 +298,8 @@ footer {
   }
   .gridBox {
     box-sizing: border-box;
-    max-width: 20em;
-    height: 20em;
+    max-width: 14em;
+    height: 14em;
     z-index: 1;
   }
 
