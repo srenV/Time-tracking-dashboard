@@ -1,143 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Rubik", sans-serif;
 }
 
-body{
-    height: 100dvh;
-    margin: 0;
-    background-color: hsl(226, 43%, 10%);
+body {
+  height: 100dvh;
+  margin: 0;
+  background-color: hsl(226, 43%, 10%);
 }
 
-main{
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 1em;
-    padding: 1.3em;
+main {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "main"
+    "orange"
+    "cyan"
+    "red"
+    "green"
+    "purple"
+    "yellow"
+    "footer";
+  align-items: center;
+  gap: 1em;
+  padding: 1.3em;
 }
 
-.gridBox{
-    box-sizing: border-box;
-    width: 100%;
-    height: 10em;
-    background-color: antiquewhite;
-    border-radius: 1em;
-    background-color: hsl(235, 46%, 20%);
-    
+.gridBox {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+  height: 10em;
+  border-radius: 1em;
+  background-color: hsl(235, 46%, 20%);
+  transition: all 0.4s ease-in-out;
 }
 
-#firstGridBox{
-    height: 11em;
-    padding: 0;
+.gridBox:hover {
+  scale: 105%;
 }
 
-#topGridBoxButton{
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
-    padding-top: 2em;
+#firstGridBox {
+  height: 11em;
+  padding: 0;
+  grid-area: main;
 }
 
-#topGridBoxButton:hover{
-    text-shadow: 0px 0px 10px white;
+#topGridBoxButton {
+  background-color: rgba(0, 0, 0, 0);
+  color: hsl(235, 45%, 61%);
+  border: none;
+  padding-top: 7%;
+  font-size: 1em;
 }
 
-#lowerTopSpan{
-    font-size: 1.3em;
-    font-weight: 300;
-    letter-spacing: .05em;
+#topGridBoxButton:hover {
+  text-shadow: 0px 0px 10px white;
 }
 
-#upperTopSpan{
-    font-size: .9em;
-    color: hsl(236, 100%, 87%);
+#lowerTopSpan {
+  font-size: 1.3em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
 }
 
-.upperTopGridBox{
-    background-color: hsl(246, 80%, 60%);
-    border-radius: 1em;
-    place-content: center;
-    height: 65%;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto;
-    gap: 1.2em;
-    z-index: -1;
+#upperTopSpan {
+  font-size: 0.9em;
+  color: hsl(236, 100%, 87%);
 }
 
-.lowerTopGridBox{
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
+.upperTopGridBox {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1em;
+  place-content: center;
+  height: 65%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 1.2em;
+  z-index: -1;
 }
 
-.upperTopGridBox img{
-    width: 4em;
-    height: 4em;
-    border: 3px solid white;
-    border-radius: 50%;
+.lowerTopGridBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upperTopGridBox img {
+  width: 4em;
+  height: 4em;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 #orange {
-    background-color: hsl(15, 100%, 70%);
-    background-image: url("./images/icon-work.svg");
-    background-position-x: 95%;
-    background-position-y: -14%;
-    background-repeat: no-repeat;
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("./images/icon-work.svg");
+  background-position-x: 95%;
+  background-position-y: -14%;
+  background-repeat: no-repeat;
+  grid-area: orange;
 }
+
 #cyan {
-    background-color: hsl(195, 74%, 62%);
-    background-image: url("./images/icon-play.svg");
-    background-position-x: 95%;
-    background-position-y: -10%;
-    background-repeat: no-repeat;
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("./images/icon-play.svg");
+  background-position-x: 95%;
+  background-position-y: -10%;
+  background-repeat: no-repeat;
+  grid-area: cyan;
 }
+
 #red {
-    background-color: hsl(348, 100%, 68%);
-    background-image: url("./images/icon-study.svg");
-    background-position-x: 95%;
-    background-position-y: -10%;
-    background-repeat: no-repeat;
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("./images/icon-study.svg");
+  background-position-x: 95%;
+  background-position-y: -10%;
+  background-repeat: no-repeat;
+  grid-area: red;
 }
+
 #green {
-    background-color: hsl(145, 58%, 55%);
-    background-image: url("./images/icon-exercise.svg");
-    background-position-x: 95%;
-    background-position-y: -2%;
-    background-repeat: no-repeat;
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("./images/icon-exercise.svg");
+  background-position-x: 95%;
+  background-position-y: -2%;
+  background-repeat: no-repeat;
+  grid-area: green;
 }
+
 #purple {
-    background-color: hsl(264, 64%, 52%);
-    background-image: url("./images/icon-social.svg");
-    background-position-x: 95%;
-    background-position-y: -25%;
-    background-repeat: no-repeat;
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("./images/icon-social.svg");
+  background-position-x: 95%;
+  background-position-y: -25%;
+  background-repeat: no-repeat;
+  grid-area: purple;
 }
+
 #yellow {
-    background-color: hsl(43, 84%, 65%);
-    background-image: url("./images/icon-self-care.svg");
-    background-position-x: 95%;
-    background-position-y: -14%;
-    background-repeat: no-repeat;
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("./images/icon-self-care.svg");
+  background-position-x: 95%;
+  background-position-y: -14%;
+  background-repeat: no-repeat;
+  grid-area: yellow;
 }
 
-.inner{
-    background-color: hsl(235, 46%, 20%);
-    height: 78%;
-    border-radius: 1em;
-    padding: 1em;
-    position: relative;
-    top: 22.5%;
+.inner {
+  background-color: hsl(235, 46%, 20%);
+  height: 78%;
+  border-radius: 1em;
+  padding: 1em;
+  position: relative;
+  top: 22.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  align-items: center;
 }
 
-.icon {
-    
+.activityTracker {
+  font-weight: 500;
+}
+
+.currentWeek {
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0.2em;
+  display: flex;
+}
+
+.currentDay {
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0.2em;
+  display: none;
+}
+
+.currentMonth {
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0.2em;
+  display: none;
+}
+
+.dots {
+  position: absolute;
+  top: 22%;
+  left: 85%;
+}
+
+.dots:hover {
+  filter: drop-shadow(0px 0px 10px white);
+}
+.pastDay {
+  display: none;
+}
+.pastweek {
+  display: unset;
+}
+.pastMonth {
+  display: none;
 }
 
 .attribution {
@@ -147,4 +215,117 @@ main{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 375px) {
+  body {
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "main orange cyan red"
+      "main green purple yellow"
+      "footer footer footer footer";
+    gap: 2em;
+    place-items: center;
+  }
+
+  .upperTopGridBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2em;
+  }
+
+  #lowerTopSpan {
+    font-size: 2.2em;
+  }
+
+  .lowerTopGridBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 2em;
+  }
+
+  #firstGridBox {
+    height: 100%;
+  }
+
+  #firstGridBox:hover {
+    filter: drop-shadow(0em 0 10em hsl(246, 80%, 60%));
+    z-index: 0;
+  }
+
+  #topGridBoxButton {
+    padding-top: 14%;
+  }
+  .gridBox {
+    box-sizing: border-box;
+    max-width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  #orange {
+    background-position-y: -6%;
+  }
+
+  #cyan {
+    background-position-y: -4%;
+  }
+
+  #red {
+    background-position-y: -2%;
+  }
+
+  #green {
+    background-position-y: -1%;
+  }
+
+  #purple {
+    background-position-y: 1%;
+  }
+
+  #yellow {
+    background-position-y: -3%;
+  }
+
+  #orange:hover {
+    filter: drop-shadow(0px 0px 10em hsl(15, 100%, 70%));
+    z-index: 0;
+  }
+  #cyan:hover {
+    filter: drop-shadow(0px 0px 10em hsl(195, 74%, 62%));
+    z-index: 0;
+  }
+  #red:hover {
+    filter: drop-shadow(0px 0px 10em hsl(348, 100%, 68%));
+    z-index: 0;
+  }
+  #green:hover {
+    filter: drop-shadow(0px 0px 10em hsl(145, 58%, 55%));
+    z-index: 0;
+  }
+  #purple:hover {
+    filter: drop-shadow(0px 0px 10em hsl(264, 64%, 52%));
+    z-index: 0;
+  }
+  #yellow:hover {
+    filter: drop-shadow(0px 0px 10em hsl(43, 84%, 65%));
+    z-index: 0;
+  }
 }

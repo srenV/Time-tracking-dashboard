@@ -1,144 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
-    <title>Frontend Mentor | Time tracking dashboard</title>
-  </head>
 
-  <body>
-    <main>
-      <div class="gridBox" id="firstGridBox">
-        <div class="upperTopGridBox">
-          <img src="./images/image-jeremy.png" alt="image-jeremy" />
-          <div>
-            <span id="upperTopSpan">Report for</span><br /><span
-              id="lowerTopSpan"
-              >Jeremy Robson</span
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main>
+    <div class="gridBox" id="firstGridBox">
+      <div class="upperTopGridBox">
+        <img src="./images/image-jeremy.png" alt="image-jeremy" />
+        <div>
+          <span id="upperTopSpan">Report for</span><br /><span id="lowerTopSpan">Jeremy Robson</span>
+        </div>
+      </div>
+      <div class="lowerTopGridBox">
+        <button id="topGridBoxButton">Daily</button>
+        <button id="topGridBoxButton">Weekly</button>
+        <button id="topGridBoxButton">Monthly</button>
+      </div>
+    </div>
+    <div class="gridBox" id="orange">
+      <div class="inner">
+        <div class="activityTracker">
+          Work
+          <div class="currentWeek">32hrs</div>
+          <div class="currentDay">5hrs</div>
+          <div class="currentMonth">103hrs</div>
+        </div>
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">36hrs</span>
           </div>
+          <div class="pastDay">Yesterday - <span>7hrs</span></div>
+          <div class="pastMonth">Last Month - <span>128hrs</span></div>
         </div>
-        <div class="lowerTopGridBox">
-          <button id="topGridBoxButton">Daily</button>
-          <button id="topGridBoxButton">Weekly</button>
-          <button id="topGridBoxButton">Monthly</button>
-        </div>
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
       </div>
-      <div class="gridBox" id="orange">
-        <div class="inner">
-          Work 5hrs
-          <!-- daily -->
-          Previous - 7hrs
-          <!-- daily -->
-          32hrs
-          <!-- weekly -->
-          Previous - 36hrs
-          <!-- weekly -->
-          103hrs
-          <!-- monthly -->
-          Previous - 128hrs
-          <!-- monthly -->
+    </div>
+    <div class="gridBox" id="cyan">
+      <div class="inner">
+        <div class="activityTracker">
+          Play
+          <div class="currentWeek">10hrs</div>
+          <div class="currentDay">1hr</div>
+          <div class="currentMonth">23hrs</div>
         </div>
-      </div>
-      <div class="gridBox" id="cyan">
-        <div class="inner">
-          Play 1hr
-        <!-- daily -->
-        Previous - 2hrs
-        <!-- daily -->
-        10hrs
-        <!-- weekly -->
-        Previous - 8hrs
-        <!-- weekly -->
-        23hrs
-        <!-- monthly -->
-        Previous - 29hrs
-        <!-- monthly -->
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">8hrs</span>
+          </div>
+          <div class="pastDay">Yesterday - <span>2hrs</span></div>
+          <div class="pastMonth">Last Month - <span>29hrs</span></div>
         </div>
-        
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
       </div>
-      <div class="gridBox" id="red">
-        <div class="inner">
-          Study 0hrs
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        4hrs
-        <!-- weekly -->
-        Previous - 7hrs
-        <!-- weekly -->
-        13hrs
-        <!-- monthly -->
-        Previous - 19hrs
-        <!-- monthly -->
+    </div>
+    <div class="gridBox" id="red">
+      <div class="inner">
+        <div class="activityTracker">
+          Study
+          <div class="currentWeek">4hrs</div>
+          <div class="currentDay">0hrs</div>
+          <div class="currentMonth">13hrs</div>
         </div>
-        
-      </div>
-      <div class="gridBox" id="green">
-        <div class="inner">
-          Exercise 1hr
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        4hrs
-        <!-- weekly -->
-        Previous - 5hrs
-        <!-- weekly -->
-        11hrs
-        <!-- monthly -->
-        Previous - 18hrs
-        <!-- monthly -->
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">7hrs</span>
+          </div>
+          <div class="pastDay">Yesterday - <span>1hr</span></div>
+          <div class="pastMonth">Last Month - <span>19hrs</span></div>
         </div>
-        
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
       </div>
-      <div class="gridBox" id="purple">
-        <div class="inner">
-          Social 1hr
-        <!-- daily -->
-        Previous - 3hrs
-        <!-- daily -->
-        5hrs
-        <!-- weekly -->
-        Previous - 10hrs
-        <!-- weekly -->
-        21hrs
-        <!-- monthly -->
-        Previous - 23hrs
-        <!-- monthly -->
+    </div>
+    <div class="gridBox" id="green">
+      <div class="inner">
+        <div class="activityTracker">
+          Exercise
+          <div class="currentWeek">4hrs</div>
+          <div class="currentDay">1hr</div>
+          <div class="currentMonth">11hrs</div>
         </div>
-        
-      </div>
-      <div class="gridBox" id="yellow">
-        <div class="inner">
-          Self Care 0hrs
-        <!-- daily -->
-        Previous - 1hr
-        <!-- daily -->
-        2hrs
-        <!-- weekly -->
-        Previous - 2hrs
-        <!-- weekly -->
-        7hrs
-        <!-- monthly -->
-        Previous - 11hrs
-        <!-- monthly -->
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">5hrs</span>
+          </div>
+          <div class="pastDay">Yesterday - <span>1hr</span></div>
+
+          <div class="pastMonth">Last Month - <span>18hrs</span></div>
         </div>
-        
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
       </div>
-    </main>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
-  </body>
+    </div>
+    <div class="gridBox" id="purple">
+      <div class="inner">
+        <div class="activityTracker">
+          Social
+          <div class="currentWeek">5hrs</div>
+          <div class="currentDay">1hr</div>
+          <div class="currentMonth">21hrs</div>
+        </div>
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">10hrs</span>
+          </div>
+          <div class="pastDay">Yesterday - <span>3hrs</span></div>
+
+          <div class="pastMonth">Last Month - <span>23hrs</span></div>
+        </div>
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
+      </div>
+    </div>
+    <div class="gridBox" id="yellow">
+      <div class="inner">
+        <div class="activityTracker">
+          Self Care
+          <div class="currentWeek">2hrs</div>
+          <div class="currentDay">0hrs</div>
+          <div class="currentMonth">7hrs</div>
+        </div>
+        <div class="pastTracker">
+          <div class="pastWeek">
+            Last Week - <span class="pastSpan">2hrs</span>
+          </div>
+          <div class="pastDay">Yesterday - <span>1hr</span></div>
+          <div class="pastMonth">Last Month - <span>11hrs</span></div>
+        </div>
+
+        <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" class="dots" />
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Soeren Timo Voigt</a>.
+  </footer>
+</body>
+
 </html>
