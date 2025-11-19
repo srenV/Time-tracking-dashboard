@@ -246,14 +246,14 @@ footer {
 
   main {
     margin: 0 auto;
-    width: 64em;
+    width: 68em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "main orange cyan red"
       "main green purple yellow"
       "footer footer footer footer";
-    gap: 1em;
+    gap: 2em;
     place-items: center;
   }
 
@@ -265,8 +265,8 @@ footer {
   }
 
   .upperTopGridBox img {
-    width: 4.5em;
-    height: 4.5em;
+    width: 5em;
+    height: 5em;
     border: 3px solid white;
     border-radius: 50%;
     position: relative;
@@ -298,8 +298,8 @@ footer {
   }
   .gridBox {
     box-sizing: border-box;
-    max-width: 14em;
-    height: 14em;
+    max-width: 15em;
+    height: 15em;
     z-index: 1;
   }
 
